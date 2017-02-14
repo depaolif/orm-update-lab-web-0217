@@ -31,7 +31,7 @@ describe "Student" do
     end
   end
 
-  describe "#create_table" do
+  describe "#create_table" do 
     it 'creates the students table in the database', :skip_before do
       DB[:conn].execute("DROP TABLE IF EXISTS students")
       Student.create_table
